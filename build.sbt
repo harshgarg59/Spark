@@ -1,8 +1,8 @@
 name := "Spark"
 organization := "org.garg"
 version := "0.1.0-SNAPSHOT"
-scalaVersion := "2.12.10"
-val sparkVersion = "3.1.2"
+scalaVersion := "2.12.15"
+val sparkVersion = "3.3.2"
 autoScalaLibrary := false
 
 val sparkDependencies = Seq(

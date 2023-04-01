@@ -1,6 +1,6 @@
 package com.inn.garg
 
-import com.inn.garg.HelloSpark.{countByCountry, loadSurveyDF}
+import com.inn.garg.app.HelloSpark.{countByCountry, loadSurveyDF}
 import org.apache.spark.sql.SparkSession
 import org.scalatest.{BeforeAndAfterAll, FunSuite}
 

@@ -5,7 +5,7 @@ import org.apache.spark.internal.Logging
 import org.apache.spark.sql.SparkSession
 import org.slf4j.impl.StaticLoggerBinder
 
-object MyObject {
+object MyObject extends Serializable {
 
   val logger: Logger = Logger.getLogger(this.getClass)
 

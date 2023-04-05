@@ -4,11 +4,11 @@ import com.inn.garg.wrapper.Survey
 import org.apache.log4j.Logger
 import org.apache.spark.sql.SparkSession
 
-object DataSetExample {
+object DataSetExample extends Serializable {
 
   @transient lazy val logger = Logger.getLogger(this.getClass)
 
-  def main(args: Array[String]): Unit = {
+  def main(b: Array[String]): Unit = {
     val spark = SparkSession.builder().master("local").appName("Dataset example").getOrCreate()
     val csvDF = spark.read.format("csv")
       .option("delimiter", ",")
